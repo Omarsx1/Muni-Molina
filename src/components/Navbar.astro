@@ -1,0 +1,113 @@
+---
+import Searchbar from "./Searchbar.astro";
+---
+
+<nav class="bg-white border-gray-200">
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2"
+  >
+    <a href="#" class="">
+      <img
+        src="/public/logo.webp"
+        class="h-8"
+        alt="Logo Municipalidad de la Molina"
+      />
+    </a>
+
+    <a href="">
+      <img src="/public/libro_recl.png" class="h-11" alt="" />
+    </a>
+    <a href="">
+      <img src="/public/bolsaTrabajoMLM.png" class="h-11" alt="" />
+    </a>
+    <a href="">
+      <img src="/public/acceso_informacion_publica.png" class="h-11" alt="" />
+    </a>
+    <a href="">
+      <img src="/public/p_te.svg" class="h-11" alt="" />
+    </a>
+
+    <Searchbar />
+    <div class="flex space-x-3 rtl:space-x-reverse">
+      <a
+        href="#"
+        class="text-sm bg-blue-700 p-2 rounded-lg hover:bg-blue-600 text-white"
+        >Portal usuario</a
+      >
+      <a
+        href="#"
+        class="text-sm bg-green-700 p-2 hover:bg-green-600 text-white rounded-lg"
+        >Pagos en línea</a
+      >
+    </div>
+  </div>
+</nav>
+<nav class="bg-[#01a464]">
+  <div class="max-w-screen-xl px-4 py-3 mx-auto items-center">
+    <ul
+      class="flex flex-rawp font-medium mt-0 justify-between space-x-9 text-sm"
+    >
+      <li>
+        <a
+          href="#"
+          class="text-gray-900 dark:text-white hover:underline"
+          aria-current="page">Contáctanos</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Trámites</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Servicios</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Noticias</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Publicaciones</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Zonificación</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline">TV</a>
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Talleres 2024</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Dengue</a
+        >
+      </li>
+      <li>
+        <a href="#" class="text-gray-900 dark:text-white hover:underline"
+          >Intranet</a
+        >
+      </li>
+      <li>
+        <select
+          name=""
+          id=""
+          class="items-center text-sm font-medium text-white border border-white/40
+          w-[105px] h-5 bg-[#01a464] rounded-sm focus:outline-none"
+        >
+          <option value="1" >Institucional</option>
+          <option value="2" >Integridad Institucional</option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</nav>
