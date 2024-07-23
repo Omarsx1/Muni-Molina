@@ -4,29 +4,35 @@ interface Props {
 }
 
 import Navbar from "../components/Navbar.astro";
-import Slide from "../components/Slide.astro";
+import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Astro description"/>
-    <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
-    <link rel="stylesheet" href="/assets/css/selectsty.css">
-    <meta name="generator" content={Astro.generator}/>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="stylesheet" href="/assets/css/selectsty.css" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script src="/assets/js/slider.js" is:inline></script>
-    <link href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <Navbar/>
-    <Slide/>
+    <Navbar />
     <slot />
     <script src="/assets/js/selectscr.js" is:inline></script>
+    <Footer />
   </body>
 
   <style is:global>
