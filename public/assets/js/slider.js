@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function startAutoPlay() {
-    intervalId = setInterval(nextSlide, 5000);
+    intervalId = setInterval(nextSlide, 6000);
   }
 
   function stopAutoPlay() {
