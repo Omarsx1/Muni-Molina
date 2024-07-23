@@ -62,23 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval(intervalId);
   }
 
-  nextButton.addEventListener("click", () => {
-    stopAutoPlay();
-    nextSlide();
-    startAutoPlay();
+  nextButton.addEventListener("click", () => {    
+    nextSlide();    
   });
 
-  prevButton.addEventListener("click", () => {
-    stopAutoPlay();
-    prevSlide();
-    startAutoPlay();
+  prevButton.addEventListener("click", () => {    
+    prevSlide();    
   });
 
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
-      stopAutoPlay();
       showSlide(index);
-      startAutoPlay();
     });
   });
 
