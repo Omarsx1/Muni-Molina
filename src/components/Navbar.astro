@@ -2,108 +2,132 @@
 import Searchbar from "./Searchbar.astro";
 ---
 
-<nav class="bg-white border-gray-200">
+<nav class="bg-white border-gray-200 hidden sm:block fixed top-0 w-full z-50">
   <div
     class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2"
   >
     <a href="#" class="">
       <img
         src="/public/logo.webp"
-        class="h-8"
+        class="h-10 w-auto"
         alt="Logo Municipalidad de la Molina"
       />
     </a>
 
     <a href="">
-      <img src="/public/libro_recl.png" class="h-11" alt=""/>
+      <img src="/public/libro_recl.png" class="h-11" alt="" />
     </a>
     <a href="">
-      <img src="/public/bolsaTrabajoMLM.png" class="h-11" alt=""/>
+      <img src="/public/bolsaTrabajoMLM.png" class="h-11" alt="" />
     </a>
     <a href="">
-      <img src="/public/acceso_informacion_publica.png" class="h-11" alt=""/>
+      <img src="/public/acceso_informacion_publica.png" class="h-11" alt="" />
     </a>
     <a href="">
-      <img src="/public/p_te.svg" class="h-11" alt=""/>
+      <img src="/public/p_te.svg" class="h-11" alt="" />
     </a>
 
-    <Searchbar/>
+    <Searchbar />
     <div class="flex space-x-3 rtl:space-x-reverse">
       <a
         href="#"
         class="text-sm bg-blue-700 p-2 rounded-lg hover:bg-blue-600 text-white"
-        >Portal usuario</a>
+        >Portal usuario</a
+      >
       <a
         href="#"
         class="text-sm bg-green-700 p-2 hover:bg-green-600 text-white rounded-lg"
-        >Pagos en línea</a>
+        >Pagos en línea</a
+      >
     </div>
   </div>
 </nav>
-<nav class="bg-[#01a464] items-center">
-  <div class="max-w-screen-xl px-4 py-3 mx-auto md:items-center">
+<nav class="bg-[#01a464] hidden sm:block items-center fixed top-14 w-full z-40">
+  <div class="max-w-screen-xl px-4 pt-5 pb-3 mx-auto items-center">
     <ul
-      class="flex flex-rawp font-medium mt-0 justify-between space-x-9 text-sm">
+      class="flex flex-wrap font-medium mt-0 justify-between space-x-9 text-sm"
+    >
       <li>
-        <a
-          href="#"
-          class="text-gray-900 dark:text-white hover:underline"
-          aria-current="page">Contáctanos</a
+        <a href="#" class="text-white hover:underline" aria-current="page"
+          >Contáctanos</a
         >
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Trámites</a
-        >
+        <a href="#" class="text-white hover:underline">Trámites</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Servicios</a
-        >
+        <a href="#" class="text-white hover:underline">Servicios</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Noticias</a
-        >
+        <a href="#" class="text-white hover:underline">Noticias</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Publicaciones</a
-        >
+        <a href="#" class="text-white hover:underline">Publicaciones</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Zonificación</a
-        >
+        <a href="#" class="text-white hover:underline">Zonificación</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline">TV</a>
+        <a href="#" class="text-white hover:underline">TV</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Talleres 2024</a
-        >
+        <a href="#" class="text-white hover:underline">Talleres 2024</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Dengue</a
-        >
+        <a href="#" class="text-white hover:underline">Dengue</a>
       </li>
       <li>
-        <a href="#" class="text-gray-900 dark:text-white hover:underline"
-          >Intranet</a
-        >
+        <a href="#" class="text-white hover:underline">Intranet</a>
       </li>
-      <li>
-        <select
-          name=""
-          id=""
-          class="bg-[#01a464] border border-gray-300 text-white text-sm rounded-sm focus:ring-white/40 focus:border-white/40 block w-[110px] px-1 focus:outline-none"
-        >
-          <option value="1">Institucional</option>
-          <option value="2">Integridad Institucional</option>
-        </select>
-      </li>
+      <div class="select-menu">
+        <div class="select-btn" id="select-btn">
+          <span id="text">Institucional</span>
+          <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+        </div>
+        <div class="list">
+          <div class="option">
+            <span class="option-text text-xs">Institucional</span>
+          </div>
+          <div class="option">
+            <span class="option-text text-xs">Integridad Institucional</span>
+          </div>
+        </div>
+      </div>
     </ul>
   </div>
 </nav>
+
+
+<!-- Navbar para dispositivos móbiles -->
+<div class="fixed top-0 z-50 bg-white w-full shadow">
+  <div class="sm:hidden border max-w-screen-lg px-3 flex-col flex mx-auto py-3">
+    <a href="#" class="text-2xl flex items-center font-black">
+      <img src="/public/logo.webp" class="w-36" alt=""/>
+    </a>
+    <input class="peer hidden" type="checkbox" id="navbar-open">
+    <label class="cursor-pointer absolute right-4 mt-2 text-xl" for="navbar-open">
+      <svg width="30px" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </label>
+    <nav class="peer-checked:block py-4 hidden">
+      <ul class="flex flex-col rounded-full gap-y-3">
+        <li class=""><a class="hover:text-green-600" href="#">Trámites</a></li>
+        <li class=""><a class="hover:text-green-600" href="#">Servicios</a></li>
+        <li class=""><a class="hover:text-green-600" href="#">Noticias</a></li>
+        <li class="">
+          <a class="hover:text-green-600" href="#">Publicaciones</a>
+        </li>
+        <li class="">
+          <a class="hover:text-green-600" href="#">Zonificación</a>
+        </li>
+        <li class=""><a class="text-gray-600 hover:text-green-600" href="#">TV</a></li>
+        <li class=""><a class="text-gray-600 hover:text-green-600" href="#">Talleres</a></li>
+        <li class=""><a class="text-gray-600 hover:text-green-600" href="#">Dengue</a></li>
+        <li class=""><a class="text-gray-600 hover:text-green-600" href="#">Intranet</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>

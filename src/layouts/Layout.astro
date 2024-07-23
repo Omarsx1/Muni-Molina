@@ -11,24 +11,22 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
-    <meta name="generator" content={Astro.generator} />
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Astro description"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+    <link rel="stylesheet" href="/assets/css/selectsty.css">
+    <meta name="generator" content={Astro.generator}/>
     <title>{title}</title>
-    <link
-      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet">
+    <script src="/assets/js/slider.js" is:inline></script>
+    <link href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
     <Navbar/>
     <Slide/>
     <slot />
+    <script src="/assets/js/selectscr.js" is:inline></script>
   </body>
 
   <style is:global>
