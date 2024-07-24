@@ -1,4 +1,4 @@
-# Mejora de la Interfaz de la Municipalidad de La Molina <img src="public/escudo-molina.svg" alt="Escudo de La Molina" width="40" height="40">
+# Optimización de la Interfaz Web de la Municipalidad de La Molina <img src="public/escudo-molina.svg" alt="Escudo de La Molina" width="40" height="40">
 
 Este proyecto tiene como objetivo optimizar la interfaz actual del portal web de la Municipalidad de La Molina, que está hecho con WordPress. 
 La nueva interfaz está desarrollada utilizando el framework Astro y TailwindCSS, proporcionando una experiencia más moderna, rápida y accesible para los usuarios.
