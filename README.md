@@ -1,54 +1,85 @@
-# Astro Starter Kit: Basics
+# Mejora de la Interfaz de la Municipalidad de La Molina <img src="public/escudo-molina.svg" alt="Escudo de La Molina" width="40" height="40">
 
-```sh
-npm create astro@latest -- --template basics
+Este proyecto tiene como objetivo optimizar la interfaz actual del portal web de la Municipalidad de La Molina, que está hecho con WordPress. 
+La nueva interfaz está desarrollada utilizando el framework Astro y TailwindCSS, proporcionando una experiencia más moderna, rápida y accesible para los usuarios.
+
+## Enlaces del Proyecto
+
+- **Sitio web oficial de la Municipalidad de La Molina:** [portal.munimolina.gob.pe](https://portal.munimolina.gob.pe/)
+- **Versión del proyecto en Vercel:** [muni-molina.vercel.app](https://muni-molina.vercel.app/)
+- **Repositorio en GitHub:** [Muni-Molina](https://github.com/Omarsx1/Muni-Molina)
+
+## Tecnologías Utilizadas
+
+- **Astro:** Un framework moderno para crear sitios web estáticos y dinámicos.
+- **TailwindCSS:** Un framework CSS que permite una estilización rápida y eficiente.
+
+## Instalación y Ejecución del Proyecto
+
+Para ejecutar este proyecto localmente, sigue los siguientes pasos:
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Omarsx1/Muni-Molina.git
+   ```
+
+2. Navega al directorio del proyecto:
+   ```bash
+   cd Muni-Molina
+   ```
+
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+El proyecto estará disponible en `http://localhost:4321`.
+
+## Estructura del Proyecto
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+├── public/              # Archivos estáticos (imágenes, íconos, etc.)
+├── src/                 # Código fuente del proyecto
+│   ├── components/      # Componentes reutilizables
+│   ├── layouts/         # Layouts utilizados en las páginas
+│   ├── pages/           # Páginas del sitio web
+│   ├── styles/          # Estilos globales y TailwindCSS
+│   └── utils/           # Utilidades y funciones auxiliares
+├── astro.config.mjs     # Configuración de Astro
+├── tailwind.config.js   # Configuración de TailwindCSS
+├── package.json         # Dependencias y scripts de npm
+└── README.md            # Documentación del proyecto
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Contribuciones
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. Realiza un fork del proyecto.
+2. Crea una nueva rama para tu función o corrección de errores (`git checkout -b feature/nueva-funcion`).
+3. Realiza los cambios necesarios y realiza commit (`git commit -am 'Agrega nueva función'`).
+4. Envía tus cambios a la rama principal (`git push origin feature/nueva-funcion`).
+5. Crea una Pull Request.
 
-## 🧞 Commands
+## Licencia
 
-All commands are run from the root of the project, from a terminal:
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contacto
 
-## 👀 Want to learn more?
+Para cualquier consulta o sugerencia, puedes contactarme a través de:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Email:** salzarjuniorf@gmail.com
+- **LinkedIn:** [omarsalazarf](https://www.linkedin.com/in/omarsalazarf/)
+
+---
+
+¡Gracias por visitar este proyecto!
+
+---
