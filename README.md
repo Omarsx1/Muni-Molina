@@ -7,7 +7,7 @@ La nueva interfaz está desarrollada utilizando el framework Astro y TailwindCSS
 
 - **Sitio web oficial de la Municipalidad de La Molina:** [portal.munimolina.gob.pe](https://portal.munimolina.gob.pe/)
 - **Versión del proyecto en Vercel:** [muni-molina.vercel.app](https://muni-molina.vercel.app/)
-- **Repositorio en GitHub:** [Muni-Molina](https://github.com/Omarsx1/Muni-Molina)
+
 
 ## Tecnologías Utilizadas
 
