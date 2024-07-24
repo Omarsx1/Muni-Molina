@@ -1,5 +1,7 @@
 ---
 import Searchbar from "./Searchbar.astro";
+import Button1 from "./buttons/Portalusuario.astro";
+import Button2 from "./buttons/Pagosenlínea.astro";
 ---
 
 <nav class="bg-white border-gray-200 hidden sm:block fixed top-0 w-full z-50">
@@ -29,20 +31,12 @@ import Searchbar from "./Searchbar.astro";
 
     <Searchbar />
     <div class="flex space-x-3 rtl:space-x-reverse">
-      <a
-        href="#"
-        class="text-sm bg-blue-700 p-2 rounded-lg hover:bg-blue-600 text-white"
-        >Portal usuario</a
-      >
-      <a
-        href="#"
-        class="text-sm bg-green-700 p-2 hover:bg-green-600 text-white rounded-lg"
-        >Pagos en línea</a
-      >
+      <Button1 />
+      <Button2 />
     </div>
   </div>
 </nav>
-<nav class="bg-[#01a464] hidden sm:block items-center fixed top-14 w-full z-40">
+<nav class="bg-[#01a464] hidden sm:block items-center fixed top-16 w-full z-40">
   <div class="max-w-screen-xl px-4 pt-5 pb-3 mx-auto items-center">
     <ul
       class="flex flex-wrap font-medium mt-0 justify-between space-x-9 text-sm"
